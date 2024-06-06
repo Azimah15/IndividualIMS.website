@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume (My introduction)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/20bf70f5fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="introduction">
+        <div class="container">
+            <nav>
+                <img src="images/uitm logo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="introduction.html">Introduction</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            
+                </ul>
+            </nav>
+            <div id="introduction">
+                <div class="container">
+                    <div class="row">
+                        <div class="introduction-col-1">
+                        <img src="images/convo.jpg">
+                        </div>
+                        <div class="introduction-col-2">
+                            <h1 class="sub-title"><u>Introduction</u></h1>
+                            <br>
+                            <p>Thank you! for considering my application for the position at your esteemed company. 
+                               I am excited about the opportunity to contribute to your team and am confident that my skills, 
+                               experience, and passion make me the ideal candidate for this role.</p>
+        
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('language')">Language</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li>Highly motivated and adaptable individual</li><br>
+                                    <li>Possess excellent communication and teamwork skills</li><br>
+                                    <li>importance of flexibility and quick learning</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="language">
+                                <ul>
+                                    <li>English</li><br>
+                                    <li>Malay</li><br>
+                                    <li>Chinese</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2017<br></span><br>Caterer</li><br>
+                                    <li><span>2019<br></span><br>Tian Cheng Bird's Nest</li><br>
+                                    <li><span>2023<br></span><br>Secret Recipe</li><br>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2014-2018<br></span><br>SMK Demak Baru</li><br>
+                                    <li><span>2020-2022<br></span><br>Diploma in Banking Studies</li><br>
+                                    <li><span>2023-2025<br></span><br>Degree in Finance</li><br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+            
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link");
+                    document.getElementById(tabname).classList.add("active-tab");
+                }
+            
+            </script>
+
+    <div class="copyright">
+        <p>copyright © Azimah Rosli. https://youtu.be/0YFrGy_mzjY?si=_iNCk8JAj3QiIgza</p>
+    </div>           
+</body>
+</html>
+
+            
